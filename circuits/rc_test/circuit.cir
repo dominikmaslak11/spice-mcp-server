@@ -1,0 +1,9 @@
+RC lowpass test
+V1 in 0 AC 1
+R1 in out 1k
+C1 out 0 100n
+.control
+ac dec 20 1 1meg
+wrdata data/ac.txt v(out)
+.endc
+.end
